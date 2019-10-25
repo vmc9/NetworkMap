@@ -1,0 +1,55 @@
+.map{
+    text-align: left;
+}
+.display{
+    text-align: left;
+}
+.element{
+    display: inline;
+    vertical-align: middle;
+}
+
+.image{
+    margin: 25px;
+}
+
+.titlebar{
+    margin-top: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.top{
+    fill: #0f7cf0;
+}
+
+.cat{
+    fill: #59A6A6;
+}
+
+.atom-one{
+    fill: #0E86D4;
+}
+.atom-two{
+    fill: #f10e51;
+}
+.atom-three{
+    fill: #3ED629;
+}
+.atom-four{
+    fill: #145DA0;
+}
+.atom-five{
+    fill: #34B78F;
+}
+.atom-six{
+    fill: #DFD920;
+}
+
+.text-vis{
+    display: block;
+}
+
+.circle-vis{
+    opacity: 0.4;
+}
