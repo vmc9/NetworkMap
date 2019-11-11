@@ -53,3 +53,7 @@
 .circle-vis{
     opacity: 0.4;
 }
+
+#table-legend{
+    margin-top: 15px;
+}
