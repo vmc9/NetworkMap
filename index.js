@@ -642,6 +642,22 @@ const activate = function(){
     document.getElementById(org).style.display ='block';
 }
 
+//LEGEND ROW FUNCTION
+const handleRowHover =  function(){
+    this.classList.toggle("is-selected", true);
+    let circle  = document.getElementsByName(this.innerText)[0];
+    d3.select(circle)
+        .attr("stroke", "#e3ff00")
+        .classed('circle-vis', false);
+}
+const handleRowHoverOut = function(){
+    this.classList.toggle("is-selected", false);
+    let circle  = document.getElementsByName(this.innerText)[0];
+    d3.select(circle)
+        .attr("stroke", "")
+        .classed("circle-vis", true);
+}
+
 //LOOP FOR LEGEND CREATION
 for(group in groups){
     current = groups[group].name;
@@ -694,6 +710,8 @@ for(group in groups){
         newIn = document.createElement("td");
         newIn.innerText = groupEntities[entity].name;
         newRow.append(newIn);
+        newRow.addEventListener('mouseover', handleRowHover);
+        newRow.addEventListener('mouseout', handleRowHoverOut);
         newBody.append(newRow);
     }
 }
